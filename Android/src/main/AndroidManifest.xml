@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.masterbaron.glasstasker">
+
+    <uses-permission android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" />
+
+    <application android:theme="@style/AppTheme">
+
+        <receiver android:name=".TaskerRelayReceiver">
+            <intent-filter>
+                <action android:name="com.masterbaron.glasstasker.RELAY" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
